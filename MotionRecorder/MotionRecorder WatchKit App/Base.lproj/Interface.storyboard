@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--InterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MotionRecorder_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="Z5U-eO-qET">
+                            <items>
+                                <tableRow identifier="ItemRowController" id="1AB-xe-e0i" customClass="ItemRowController" customModule="MotionRecorder_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="23z-za-Sv7">
+                                        <items>
+                                            <label width="124" height="37" alignment="left" text="Label" id="l4i-vc-JCB"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="l4i-vc-JCB" id="G1B-HE-8VA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Z5U-eO-qET" id="cF4-cq-SCm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-20"/>
+        </scene>
+    </scenes>
+</document>
