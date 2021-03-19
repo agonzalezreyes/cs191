@@ -17,7 +17,6 @@ indexTimes = data[ (data['time'] > end_mark) ].index
 data.drop(indexTimes , inplace=True)
 print(data)
 
-data_dict = {}
 num_sample = 0
 file_title = str(data.iloc[num_sample][-1]) + "_" + str(num_sample)
 num_samples = 0
